@@ -1,14 +1,11 @@
-export default function Home() {
-  console.log('test');
-  const renderName = () => {
-    const name = 'ali';
-    return <span>{name}</span>;
-  };
+import { Banner } from '@/components/banner';
+import Welcome from '@/components/Welcome';
 
+export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div>my fist page</div>
-      {renderName()}
+    <div className="flex flex-col items-center justify-center min-h-screen ">
+      <Banner />
+      <Welcome/> 
     </div>
   );
 }
